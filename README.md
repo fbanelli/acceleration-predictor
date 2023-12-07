@@ -1,5 +1,4 @@
 # Acceleration Predictor
-Drone acceleration predictor based on a buffer of the last commanded rpms
 
 This is a personal project developed in order to validate the idea of replacing an IMU in drone racing to achieve similar performances in state estimation.
 Disclaimer: this project is far from being optimized and will be further developed to actually be able to replace an IMU in the context of drone racing.
