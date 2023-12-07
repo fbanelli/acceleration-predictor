@@ -17,3 +17,8 @@ The network was trained on the first 70% of the track, 15% was used for validati
 ## Results
 The results on the testing set are very promising, considering that the network architecture is very basic. The final part of the data, where the drone lands, is the least accurate because it never appears in the training data, showing the weakness of this model to generalize to different tracks. In a real application, the network would be trained on the full track and the validation and testing would be done on new runs of the same track, hence including takeoff and landing.
 Potential improvements could come from more advanced architectures and better hyperparameter tuning, in particular a promising architecture is a Temporal Convolutional Network (TCN).
+Below are the results on the test set:
+
+![X test results](cloverData/results/Xtestresults.png)
+![Y test results](cloverData/results/Ytestresults.png)
+![Z test results](cloverData/results/Ztestresults.png)
