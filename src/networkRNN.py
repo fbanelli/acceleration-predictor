@@ -1,5 +1,15 @@
-import numpy as np
-import pandas as pd
+from importer import import_library
+# import numpy and pandas using import_library
+np = import_library("numpy")
+pd = import_library("pandas")
+
+    # Import the Keras libraries and packages
+tf = import_library("tensorflow")
+keras = import_library("tensorflow.keras")
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import LSTM
+from keras.layers import Dropout
 
 def trainRNN(commanded_inputs_file_name, ground_truth_file_name, buffer_size, epochs, batch_size, output_model_file_name):
     # Load the data
@@ -58,11 +68,7 @@ def trainRNN(commanded_inputs_file_name, ground_truth_file_name, buffer_size, ep
     # Reshaping
     X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 4))
 
-    # Import the Keras libraries and packages
-    from tensorflow.keras.models import Sequential
-    from tensorflow.keras.layers import Dense
-    from tensorflow.keras.layers import LSTM
-    from tensorflow.keras.layers import Dropout
+
 
     # Initialising the RNN
     model = Sequential()
