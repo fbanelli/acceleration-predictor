@@ -44,7 +44,20 @@ The results on the testing set are very promising, considering that the network 
 The results are very promising because this network could obtain acceleration data at a higher frequency than an IMU, since the RPM measurements are at 180Hz, while the IMU is sampled at 100 HZ.
 Potential improvements could come from more advanced architectures and better hyperparameter tuning, in particular a promising architecture is a Temporal Convolutional Network (TCN).
 Below are the results on the test set:
-
-![X test results](cloverData/results/Xtestresults.png)
-![Y test results](cloverData/results/Ytestresults.png)
-![Z test results](cloverData/results/Ztestresults.png)
+<br>
+<br>
+<div align="center">
+  <img src="cloverData/results/Xtestresults.png" alt="Description of the image">
+</div>
+<br>
+<br>
+<div align="center">
+  <img src="cloverData/results/Ytestresults.png" alt="Description of the image">
+</div>
+<br>
+<br>
+<div align="center">
+  <img src="cloverData/results/Ztestresults.png" alt="Description of the image">
+</div>
+<br>
+<br>
