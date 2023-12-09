@@ -1,9 +1,7 @@
 from importer import import_library
-# import numpy and pandas using import_library
 np = import_library("numpy")
 pd = import_library("pandas")
 
-    # Import the Keras libraries and packages
 tf = import_library("tensorflow")
 keras = import_library("tensorflow.keras")
 from keras.models import Sequential
