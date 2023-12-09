@@ -21,6 +21,14 @@ on Windows:
 on Linux/MacOS:
 'python3 src/main.py'
 
+## Data
+
+The dataset used for this project is the MIT Blackbird Dataset1, a large-scale dataset for UAV perception in aggressive flight. The dataset contains over 10 hours of flight data from 168 flights over 17 flight trajectories and 5 environments at velocities up to 7.0 m/s. Each flight includes sensor data from 120Hz stereo and downward-facing photorealistic virtual cameras, 100Hz IMU, motor speed sensors, and 360Hz millimeter-accurate motion capture ground truth.
+
+The specific trajectory and speed used for this project is the clover path at maximum speed 5.0 m/s. The clover path is one of the 17 flight trajectories in the dataset, and it consists of four loops that form a clover shape. The maximum speed 5.0 m/s is the highest speed available for this trajectory in the dataset. The clover path at maximum speed 5.0 m/s is a challenging scenario for UAV perception, as it involves high accelerations, rotations, and changes in lighting conditions.
+
+[mit-aera/Blackbird-Dataset](https://github.com/mit-aera/Blackbird-Dataset)
+
 
 ## Data Preprocessing
 The rpm data wasn't filtered at all because in a real-world scenario the system would use the real-time commandend inputs to make its estimate. However, it was resampled at exactly 180 Hz.
