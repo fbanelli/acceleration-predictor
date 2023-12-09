@@ -6,7 +6,11 @@ pd = import_library("pandas")
 plt = import_library("matplotlib.pyplot")
 signal = import_library("scipy.signal")
 os = import_library("os")
-interp1d = import_library("scipy.interpolate.interp1d")
+sg = signal.signal
+
+# import interpid  whit import_library 
+
+from scipy.interpolate import interp1d
 
 
 def dataset_prepare(input_gt_name, input_rpm_name):
@@ -48,10 +52,10 @@ def dataset_prepare(input_gt_name, input_rpm_name):
     
     # Filter the data with a low pass butterworth filter at 5 Hz
     freq = 5
-    b, a = signal.butter(1, freq/180, 'low', analog=False)
-    butterx = signal.filtfilt(b, a, x)
-    buttery = signal.filtfilt(b, a, y)
-    butterz = signal.filtfilt(b, a, z)
+    b, a = sg.butter(1, freq/180, 'low', analog=False)
+    butterx = sg.filtfilt(b, a, x)
+    buttery = sg.filtfilt(b, a, y)
+    butterz = sg.filtfilt(b, a, z)
     
     # Calculate the velocity
     vx = np.diff(butterx) / time_deltas
@@ -60,10 +64,10 @@ def dataset_prepare(input_gt_name, input_rpm_name):
     
     # Filter the data with a 4th order low pass butterworth filter at 1 Hz
     freq = 1
-    b, a = signal.butter(4, freq/180, 'low', analog=False)
-    buttervx = signal.filtfilt(b, a, vx)
-    buttervy = signal.filtfilt(b, a, vy)
-    buttervz = signal.filtfilt(b, a, vz)
+    b, a = sg.butter(4, freq/180, 'low', analog=False)
+    buttervx = sg.filtfilt(b, a, vx)
+    buttervy = sg.filtfilt(b, a, vy)
+    buttervz = sg.filtfilt(b, a, vz)
     
     # Calculate the acceleration
     ax = np.diff(buttervx) / time_deltas[1:]
