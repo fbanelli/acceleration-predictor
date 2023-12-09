@@ -8,9 +8,8 @@ signal = import_library("scipy.signal")
 os = import_library("os")
 sg = signal.signal
 
-# import interpid  whit import_library 
-
-from scipy.interpolate import interp1d
+# import interpid  whit import_library
+interp1d = import_library("scipy.interpolate.interp1d")
 
 
 def dataset_prepare(input_gt_name, input_rpm_name):
