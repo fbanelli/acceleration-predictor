@@ -9,7 +9,7 @@ The idea behind the project is that an state-of-the-art odometry systems for dro
 
 To install the requirements, run the following command:
 
- ` pip install -r requirements.txt` 
+ `pip install -r requirements.txt` 
 
 ## Run the software
 
