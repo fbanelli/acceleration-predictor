@@ -1,6 +1,5 @@
 from importer import import_library
 
-# import numpy,pandas,matplotlib,scipy,os using import_library
 np = import_library("numpy")
 pd = import_library("pandas")
 plt = import_library("matplotlib.pyplot")
@@ -8,7 +7,6 @@ signal = import_library("scipy.signal")
 os = import_library("os")
 sg = signal.signal
 
-# import interpid  whit import_library
 interp1d = import_library("scipy.interpolate.interp1d")
 
 

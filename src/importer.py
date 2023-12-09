@@ -5,7 +5,6 @@ def import_library(library_name):
     except ImportError:
         print("The " + library_name + " library is not installed. Installing...")
         try:
-            # if the libary name is a subpackage, install the parent package
             if "." in library_name:
                 library_name_install = library_name.split(".")[0]
             else:
