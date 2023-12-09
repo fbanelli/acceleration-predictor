@@ -16,10 +16,11 @@ pip install -r requirements.txt
 To train the network and visualize the final results, run the following command:
 
 on Windows:
-'./src/main.py'
+'python src/main.py'
 
 on Linux/MacOS:
 'python3 src/main.py'
+
 
 ## Data Preprocessing
 The rpm data wasn't filtered at all because in a real-world scenario the system would use the real-time commandend inputs to make its estimate. However, it was resampled at exactly 180 Hz.
