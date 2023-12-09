@@ -1,9 +1,13 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import scipy.signal as signal
-from scipy.interpolate import interp1d
-import os
+from importer import import_library
+
+# import numpy,pandas,matplotlib,scipy,os using import_library
+np = import_library("numpy")
+pd = import_library("pandas")
+plt = import_library("matplotlib.pyplot")
+signal = import_library("scipy.signal")
+os = import_library("os")
+interp1d = import_library("scipy.interpolate.interp1d")
+
 
 def dataset_prepare(input_gt_name, input_rpm_name):
     # Read the data from the CSV file
