@@ -9,17 +9,17 @@ The idea behind the project is that an state-of-the-art odometry systems for dro
 
 To install the requirements, run the following command:
 
-` ` ` pip install -r requirements.txt` ` ` 
+ ` pip install -r requirements.txt` 
 
 ## Run the software
 
 To train the network and visualize the final results, run the following command:
 
 On Windows:
-` ` `python src/main.py` ` ` 
+ `python src/main.py` 
 
 On Linux/MacOS:
-` ` `python3 src/main.py'` ` ` 
+ `python3 src/main.py`
 
 ## Data
 
